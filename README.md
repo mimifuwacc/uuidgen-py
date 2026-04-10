@@ -1,4 +1,4 @@
-# uuidgen
+# uuidgen-py
 
 UUID generator by mimifuwacc
 
