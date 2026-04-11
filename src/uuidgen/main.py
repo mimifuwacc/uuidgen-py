@@ -14,7 +14,7 @@ def uuidv4():
 
 
 def uuidv7():
-    timestamp_ms = int(time.time_ns() / 1_000_000)  # Convert to milliseconds
+    timestamp_ms = time.time_ns() // 1_000_000  # Convert to milliseconds
     random_bytes = bytearray(os.urandom(10))
 
     raw_bytes = bytearray(timestamp_ms.to_bytes(6, "big"))
